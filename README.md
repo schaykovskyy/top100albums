@@ -1,43 +1,27 @@
-### Objective
+# TbTop100
 
-Tutor Bright is branching into the music business and needs a new website. Build it using TypeScript and Angular.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
 
-### Brief
+## Development server
 
-In a fictional world, Tutor Bright is branching into the music business and we need a new a website. This website needs to display the top 100 songs based on the iTunes API. This code challenge allows you to choose your own path and lets you flaunt your creative panache and technical skills along the way.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### Tasks
+## Code scaffolding
 
--   Implement assignment using:
-    -   Language: **TypeScript**
-    -   Framework: **Angular**
--   Show top 100 albums based on the json feed here: `https://itunes.apple.com/us/rss/topalbums/limit=100/json`
--   Cross browser support (or graceful degradation)
--   A clean modern look and responsive design
--   A good user experience
--   Use a CSS Framework (Bootstrap, Foundation, Pure, etc.…)
--   Allow the top 100 to be searchable
--   Surprise us! Add a feature that you think would work well here (for instance, advanced search, integration with other API, a "Favorite" functionality)
-    -   Describe the feature in separate markdown file
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Deliverables
+## Build
 
-Make sure to include all source code in the repository. 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### Evaluation Criteria
+## Running unit tests
 
--   **TypeScript** best practices
--   We're looking for you to produce working code, with enough room to demonstrate how to structure components in a small program.
--   Show us your work through your commit history
--   Completeness: did you complete the features?
--   Correctness: does the functionality act in sensible, thought-out ways?
--   Maintainability: is it written in a clean, maintainable way?
--   Testing: is the system adequately tested?
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### CodeSubmit
+## Running end-to-end tests
 
-Please organize, design, test and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-All the best and happy coding,
+## Further help
 
-The Tutor Bright Team
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
