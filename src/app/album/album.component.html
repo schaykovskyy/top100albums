@@ -1,0 +1,12 @@
+<div class="album-card">
+    <div class="album-cover">
+        <img [src]="albumData['im:image'][2]['label']" alt="Album Cover">
+    </div>
+    <div class="album-details">
+        <h3>{{ albumData['im:name']['label'] }}</h3>
+        <p>Artist: {{ albumData['im:artist']['label'] }}</p>
+        <p>Price: {{ albumData['im:price']['label'] }}</p>
+        <p>Category: {{ albumData['category']['attributes']['label'] }}</p>
+        <p>Release Date: {{ albumData['im:releaseDate']['attributes']['label'] }}</p>
+        <a [href]="albumData['link']['attributes']['href']" target="_blank">Listen on Apple Music</a>
+</div>

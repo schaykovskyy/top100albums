@@ -1,0 +1,36 @@
+.album-card {
+    display:flex;
+    align-items:center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+
+.album-cover {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.album-details {
+    flex: 3;
+}
+
+.album-cover img {
+    max-width: 100%;
+    height: auto;
+}
+
+.album-details h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.album-details p {
+    margin: 5px 0;
+}
+
+.album-details a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
