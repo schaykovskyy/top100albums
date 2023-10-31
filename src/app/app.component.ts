@@ -8,15 +8,14 @@ import { Album } from './album.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'Top100'
   top100Albums: Album[] =[];
   displayedAlbums: Album[]=[];
   constructor(private albumService: AlbumsService){}
 
   ngOnInit(): void {
       this.albumService.getTop100Albums().subscribe((data)=>{
-        this.top100Albums = this.displayedAlbums = data.feed.entry;
-        // this.displayedAlbums = data.feed.entry;
+        this.top100Albums = data.feed.entry;
+        this.displayedAlbums = data.feed.entry;
       });
   }
   updateDisplayedAlbums(filteredAlbums:Album[]){
