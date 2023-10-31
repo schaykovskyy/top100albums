@@ -7,7 +7,9 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div>
-  <app-albums [top100Albums]="top100Albums"></app-albums>
+  <app-search [top100Albums]="top100Albums" (filteredAlbums)="updateDisplayedAlbums($event)"></app-search>
+  <div class="no-albums-message" *ngIf="displayedAlbums.length===0"> No albums found </div>
+  <app-albums [displayedAlbums]="displayedAlbums"></app-albums>
 </div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

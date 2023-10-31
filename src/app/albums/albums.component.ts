@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Album } from '../album.model';
 
 @Component({
   selector: 'app-albums',
@@ -6,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./albums.component.css']
 })
 export class AlbumsComponent {
-  @Input() top100Albums: any; 
+  @Input() displayedAlbums: Album[] = []; 
 
   constructor() { }
 }
